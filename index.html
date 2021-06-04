@@ -1,26 +1,18 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>test360test</title>
-    <meta name="description" content="test360">
-    <script src="https://aframe.io/releases/0.2.0/aframe.min.js"></script>
-    
-  </head>
-  <body>
-
- 　<a-scene>
-    <a-assets>
-     <img id="360test" src="360test.jpg"> 
-    </a-assets>
-   <a-sky src="#360test" rotaton="0 180 0"></a-sky>   
-      <a-camera wasd-controls-enabled="true"></a-camera>
-  </a-scene>
-      
-      
-   
-      
-      
-
-  </body>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>VRサンプル</title>
+        <!-- A-FrameのライブラリをCDNで読み込む -->
+        <script src="https://aframe.io/releases/0.2.0/aframe.min.js"></script>
+    </head>
+    <body>
+        <!-- シーンの定義 -->
+        <div class="vr-wrap">
+            <a-scene>
+                <!-- 全天球の背景画像として全天球写真を読み込む -->
+                <a-sky src="360test.JPG"></a-sky>
+            </a-scene>
+        </div>
+    </body>
 </html>
