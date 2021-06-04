@@ -1,20 +1,11 @@
-<!DOCTYPE html>
-<html lang="ja">
-    <head>
-        <meta charset="UTF-8">
-        <title>VRサンプル</title>
-        <!-- A-FrameのライブラリをCDNで読み込む -->
-        <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
-    </head>
-    <body>
-        <!-- シーンの定義 -->
-        <div class="vr-wrap">
-            <a-scene>
-            <a-assets>
-                <!-- 全天球の背景画像として全天球写真を読み込む -->
-           </a-assets>
-                <a-sky src="360test.JPG"></a-sky>
-            </a-scene>
-        </div>
-    </body>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+    <title> a-frame 360 image </title>
+  </head>
+  <body>
+    <a-scene>
+      <a-sky src="360.JPG" rotation="0 -90 -20"></a-sky>
+    </a-scene>
+  </body>
 </html>
